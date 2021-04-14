@@ -5,7 +5,7 @@
     <data>
         <variable
             name="data"
-            type="org.sopt.databindingexercise.data.YoutubeItem" />
+            type="org.sopt.databindingexercise.GithubRepo" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -13,7 +13,7 @@
 
         <ImageView
             android:id="@+id/youtube_image"
-            uploadImage="@{data.youtubeImage}"
+            uploadImage="@{data.url}"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:text="@{data.youtubeTitle}"
+            android:text="@{data.name}"
             app:layout_constraintStart_toEndOf="@id/youtube_image"
             app:layout_constraintTop_toTopOf="@+id/youtube_image"
             tools:text="title"/>
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:textSize="16sp"
             tools:text="date"
-            android:text="@{data.youtubeDate}"
+            android:text="@{data.date}"
             app:layout_constraintLeft_toLeftOf="@id/youtube_title"
             app:layout_constraintTop_toBottomOf="@+id/youtube_title"/>
 
