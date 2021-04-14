@@ -27,53 +27,52 @@ class MainActivity : AppCompatActivity() {
         loadYoutubeDatas()
     }
 
-    private fun loadYoutubeDatas(){
+    private fun loadYoutubeDatas() {
         youtubeAdapter.submitLIst(youtubeItems)
     }
-
 
 
     private fun loadDatas() {
         youtubeItems.apply {
             add(
                 YoutubeItem(
-                    R.drawable.ic_cake,
+                    R.drawable.ic_home_img_step3,
                     "Jooyae",
                     "2021.04.13"
                 )
             )
             add(
                 YoutubeItem(
-                    R.drawable.ic_cake,
-                    "Jooyae",
+                    R.drawable.ic_home_img_step3,
+                    "Jooyae2",
+                    "2021.04.14"
+                )
+            )
+            add(
+                YoutubeItem(
+                    R.drawable.ic_home_img_step3,
+                    "Jooyae3",
                     "2021.04.13"
                 )
             )
             add(
                 YoutubeItem(
-                    R.drawable.ic_cake,
-                    "Jooyae",
+                    R.drawable.ic_home_img_step3,
+                    "Jooyae4",
                     "2021.04.13"
                 )
             )
             add(
                 YoutubeItem(
-                    R.drawable.ic_cake,
-                    "Jooyae",
+                    R.drawable.ic_home_img_step3,
+                    "Jooyae5",
                     "2021.04.13"
                 )
             )
             add(
                 YoutubeItem(
-                    R.drawable.ic_cake,
-                    "Jooyae",
-                    "2021.04.13"
-                )
-            )
-            add(
-                YoutubeItem(
-                    R.drawable.ic_cake,
-                    "Jooyae",
+                    R.drawable.ic_home_img_step3,
+                    "Jooyae6",
                     "2021.04.13"
                 )
             )
