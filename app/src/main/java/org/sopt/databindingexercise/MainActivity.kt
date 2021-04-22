@@ -3,6 +3,7 @@ package org.sopt.databindingexercise
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import org.sopt.databindingexercise.adapter.RecyclerAdapter
@@ -35,8 +36,12 @@ class MainActivity : AppCompatActivity() {
         RetrofitService.githubApi.getRepos("jooyae")
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
-            .subscribe ({
-                youtubeAdapter.submitList(it)
+            .subscribe ({ list ->
+                youtubeAdapter.submitList(list)
+                list.forEach{
+                    Log.d("repo url",it.url )
+
+                }
             },{
                 it.printStackTrace()
             })
